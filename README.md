@@ -6,7 +6,7 @@ Educate yourself on the related prices when using large language models like GPT
 - Retrieval - $0.20/GB/assistant/day (free until 01/12/2024)
 - gpt-4-1106-preview - $0.01/1K tokens (input), $0.03/1K tokens (output)
 ## Info
-You will not be able to create assistants inside the app unless you have access to GPT-4 API. According to https://github.com/ransurf/obsidian-intelligence/issues/6#issuecomment-1868231735 you can bypass it by creating them in the API playground.
+Apparently GPT-4 API might be behind a paywall for how much credits you have. According to https://github.com/ransurf/obsidian-intelligence/issues/6#issuecomment-1868231735 you can bypass it by creating them in the API playground https://platform.openai.com/assistants
 
 For feedback and questions, feel free to join my [discord](https://discord.com/invite/aQgbyj522e) and check my notes on the plugin.
 
