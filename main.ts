@@ -87,19 +87,48 @@ class OISettingTab extends PluginSettingTab {
         containerEl.empty();
 
         const settingPageHeader = containerEl.createEl('div', { cls: 'setting-item setting-item-heading' });
-        const extraSectionInfo = settingPageHeader.createEl('div', { cls: 'setting-item-info' });
+        
+        const pluginInfoSection = settingPageHeader.createEl('div', { cls: 'setting-item-info' });
+        
+        pluginInfoSection.createEl('div', { text: 'Intelligence', cls: 'setting-item-name' });
+        
+        const socialsDesc = pluginInfoSection.createEl('div', { cls: 'setting-item-description' });
+        
+        socialsDesc.appendChild(
+            createEl('span', {
+                text: `Hear about updates and other projects by subscribing to John Mavrick's `
+            })
+        );
 
-        extraSectionInfo.createEl('div', { text: 'Intelligence', cls: 'setting-item-name' });
+        socialsDesc.appendChild(
+            createEl('a', {
+                text: "YouTube",
+                href: "https://youtube.com/@itsjohnmavrick",
+            })
+        );
 
-        const colorDesc = extraSectionInfo.createEl('div', { cls: 'setting-item-description' });
+        socialsDesc.appendChild(
+            createEl('span', {
+                text: ` or `
+            })
+        );
 
-        colorDesc.appendChild(
+        socialsDesc.appendChild(
+            createEl('a', {
+                text: "newsletter",
+                href: "https://newsletter.johnmavrick.com",
+            })
+        );
+
+        const modifyOnlineDesc = pluginInfoSection.createEl('div', { cls: 'setting-item-description' });
+
+        modifyOnlineDesc.appendChild(
             createEl('span', {
                 text: 'You can also view and modify assistants/threads online from the '
             })
         );
-
-        colorDesc.appendChild(
+        
+        modifyOnlineDesc.appendChild(
             createEl('a', {
                 text: "OpenAI Developer Playground",
                 href: "https://platform.openai.com/assistants",
